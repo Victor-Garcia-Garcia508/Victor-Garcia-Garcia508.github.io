@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Simple static site for GitHub Pages.">
-  <meta name="author" content="Your Name">
-  <title>My GitHub Pages Site</title>
+  <meta name="description" content="Portfolio and CV of VICTOR GARCIA.">
+  <meta name="author" content="VICTOR GARCIA">
+  <title>VICTOR GARCIA · Portfolio</title>
   <style>
     :root{
       --bg:#0b1020;
@@ -30,7 +30,7 @@
     .badge{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.12);border-radius:999px;color:var(--muted);font-size:12px;margin-bottom:10px}
     h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:0 0 12px}
     .lead{color:var(--muted);font-size:18px;margin:0 0 18px}
-    .cta{display:flex;gap:12px;margin-top:10px}
+    .cta{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text);box-shadow:var(--shadow)}
     .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0a0d1e;border:none}
     .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;box-shadow:var(--shadow)}
@@ -38,36 +38,35 @@
     section{padding:40px 0}
     h2{font-size:22px;margin:0 0 10px}
     .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-    .project{padding:16px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .project,.panel{padding:16px}
     .project h3{margin:8px 0 6px;font-size:16px}
-    .project p{margin:0;color:var(--muted);font-size:14px}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .project p, .panel p{margin:0;color:var(--muted);font-size:14px}
+    ul.inline > li{margin-bottom:6px}
     .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
     footer{padding:30px 0 60px;color:var(--muted);font-size:14px}
     .note{font-size:12px;color:var(--muted);margin-top:12px}
     @media (max-width:860px){
       .hero{grid-template-columns:1fr}
       .grid{grid-template-columns:1fr 1fr}
-      .about{grid-template-columns:1fr}
+      .two{grid-template-columns:1fr}
     }
     @media (max-width:560px){
       .grid{grid-template-columns:1fr}
     }
+    .meta{color:var(--muted);font-size:13px}
+    .tag{display:inline-block;margin-right:8px;margin-top:6px;padding:3px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.12);font-size:12px;color:var(--muted)}
   </style>
 </head>
 <body>
-  <!--
-    Ready-to-use GitHub Pages template (GitHub.io)
-    1) Upload this file as index.html to your repository.
-    2) Enable Pages in Settings → Pages, select the branch and /root folder.
-    3) Open the URL GitHub gives you (e.g., https://yourusername.github.io/).
-  -->
   <header>
     <div class="wrap nav">
-      <div class="brand">Your Name</div>
+      <div class="brand">VICTOR GARCIA</div>
       <nav class="links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#honors">Honors</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -76,75 +75,144 @@
   <main class="wrap">
     <section class="hero">
       <div>
-        <span class="badge">🚀 Built with GitHub Pages</span>
-        <h1>Hi, I'm <span style="background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">Your Name</span>.</h1>
-        <p class="lead">Developer / Designer / Creator. This is where I share projects, ideas, and resources.</p>
+        <span class="badge">🚀 Power Electronics · Power Systems · Control · VLSI/FPGA</span>
+        <h1>Hi, I'm <span style="background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">VICTOR GARCIA</span>.</h1>
+        <p class="lead">ETH Zürich M.Sc. (EE) candidate focused on power electronics, power systems, control, and VLSI/FPGA. Seeking to build reliable, efficient systems in Switzerland—from predictive control of power electronics to energy systems optimization.</p>
         <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="https://github.com/" target="_blank" rel="noopener">My GitHub</a>
+          <a class="btn primary" href="https://www.linkedin.com/in/victor-garcia-8a750b21a/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="mailto:vigarcia@student.ethz.ch">Email me</a>
+          <a class="btn" href="#publications">Publications</a>
+          <a class="btn" href="#projects">Projects</a>
         </div>
-        <p class="note">Tip: edit this file and run <span class="kbd">git add</span> → <span class="kbd">git commit</span> → <span class="kbd">git push</span> to update your site.</p>
+        <p class="note">Ueberlandstrasse 17, 8953 Dietikon, Switzerland · +41 77 290 15 29 · <a href="mailto:vigarcia@student.ethz.ch">vigarcia@student.ethz.ch</a></p>
       </div>
-      <div class="card illus">Add your image, logo or illustration here ✨</div>
+      <div class="card illus">Add a photo or graphic here ✨</div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="two">
+        <div class="card panel">
+          <h3>ETH Zürich — M.Sc. Electrical Engineering and Information Technology</h3>
+          <p class="meta">Zurich, Switzerland · Sept 2025 – July 2027</p>
+        </div>
+        <div class="card panel">
+          <h3>Technische Universität München — Erasmus Exchange (M.Sc. Communications & Electronics)</h3>
+          <p class="meta">Munich, Germany · Sept 2023 – Aug 2024</p>
+          <ul class="inline">
+            <li>Bachelor Thesis: Investigation of CSI Signals in 5G/6G networks.</li>
+          </ul>
+        </div>
+        <div class="card panel" style="grid-column:1/-1">
+          <h3>Universidad Politécnica de Madrid — B.Sc. Electrical Engineering and Information Technology</h3>
+          <p class="meta">Madrid, Spain · Sept 2020 – July 2024</p>
+          <ul class="inline">
+            <li>Top 5% of a 220-student cohort.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="two">
+        <div class="card panel">
+          <h3>Research Internship (Part-time)</h3>
+          <p class="meta">Universidad Politécnica de Madrid — Dept. of Signals and Systems · Madrid, Spain · Dec 2024 – Jun 2025</p>
+          <ul class="inline">
+            <li>Screening for Parkinson’s Disease using biometrics and AI.</li>
+            <li>Time-series missing data imputation with signal-processing algorithms.</li>
+            <li>Heavy use of Python for learning and classification.</li>
+          </ul>
+        </div>
+        <div class="card panel">
+          <h3>Working Student (Part-time)</h3>
+          <p class="meta">Technische Universität München — Lehrstuhl für Kommunikationsnetze · Munich, Germany · Mar 2024 – Sept 2024</p>
+          <ul class="inline">
+            <li>Integrated FlexRIC SDK within an OpenAirInterface (OAI) testbed; implemented and tested offloading strategies in C/C++.</li>
+            <li>Measurement, profiling, and troubleshooting across RAN components to validate algorithmic performance.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="honors">
+      <h2>Honors & Scholarships</h2>
+      <div class="grid">
+        <article class="card project">
+          <h3>Core Courses Honors (B.Sc.)</h3>
+          <p>Physics 1 (6 ECTS), Calculus (6 ECTS), Physics 2 (6 ECTS), Programming (6 ECTS), Signals and Systems (6 ECTS), Introduction to Intelligent Robotics (6 ECTS), Electronics and Instrumentation (6 ECTS), Digital Systems II (3 ECTS).</p>
+        </article>
+        <article class="card project">
+          <h3>Excellence Scholarship — City of Madrid</h3>
+          <p>Awarded in the 2020 & 2021 editions for exceptional academic achievement.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="languages-skills">
+      <h2>Languages & Skills</h2>
+      <div class="two">
+        <div class="card panel">
+          <h3>Languages</h3>
+          <p><span class="tag">Spanish — Native</span> <span class="tag">English — C1 (Cambridge CAE)</span> <span class="tag">German — B2 (progressing to C1)</span></p>
+        </div>
+        <div class="card panel">
+          <h3>Skills</h3>
+          <p class="meta">Personal</p>
+          <p>Proactivity, Teamwork, Organization, Autonomy, Leadership, Problem solving, Creativity, Commitment</p>
+          <p class="meta" style="margin-top:10px">Technical</p>
+          <p>Project management, R&D in Engineering, Complex technical analysis</p>
+          <p class="meta" style="margin-top:10px">Programming</p>
+          <p>Python, Matlab, R, SQL, VHDL, C/C++, Assembly, HTML, Git, Java</p>
+          <p class="meta" style="margin-top:10px">Design Tools</p>
+          <p>PLECS, Cadence Virtuoso, Simulink, LabView</p>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
-      <h2>Featured Projects</h2>
-      <p class="lead">A short selection of things I’ve built recently.</p>
+      <h2>Projects</h2>
+      <p class="lead">A few highlights will go here. Link to code or demos as available.</p>
       <div class="grid">
         <article class="card project">
-          <h3>Project 1</h3>
-          <p>Brief description of what it does, including used technologies.</p>
-          <p><a href="#" target="_blank" rel="noopener">Demo</a> · <a href="#" target="_blank" rel="noopener">Code</a></p>
+          <h3>FlexRIC + OAI Testbed Integration</h3>
+          <p>Prototype integration with offloading strategies; profiling & troubleshooting across RAN components.</p>
+          <p><a href="#" target="_blank" rel="noopener">Code</a></p>
         </article>
         <article class="card project">
-          <h3>Project 2</h3>
-          <p>Short summary of the problem it solves.</p>
-          <p><a href="#" target="_blank" rel="noopener">Demo</a> · <a href="#" target="_blank" rel="noopener">Code</a></p>
+          <h3>Biometrics-based Parkinson’s Screening</h3>
+          <p>Signal processing, imputation, and ML classification in Python.</p>
+          <p><a href="#" target="_blank" rel="noopener">Paper / Repo</a></p>
         </article>
         <article class="card project">
-          <h3>Project 3</h3>
-          <p>A few words about results or lessons learned.</p>
-          <p><a href="#" target="_blank" rel="noopener">Demo</a> · <a href="#" target="_blank" rel="noopener">Code</a></p>
+          <h3>CSI 5G/6G Investigation</h3>
+          <p>Exploratory analysis of Channel State Information and applications.</p>
+          <p><a href="#" target="_blank" rel="noopener">Thesis</a></p>
         </article>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="card" style="padding:18px">
-        <h2>About Me</h2>
-        <p>Write a short bio here: where you’re from, what you’re interested in, and your main experience.</p>
-        <ul>
-          <li>🧰 Favorite tech: HTML, CSS, JS, Python...</li>
-          <li>📚 Latest learning: …</li>
-          <li>🌱 Current goal: …</li>
-        </ul>
-      </div>
-      <div class="card" style="padding:18px">
-        <h2>Stack / Skills</h2>
-        <p class="lead" style="margin:0 0 8px">Some tools I use:</p>
-        <div style="display:flex;flex-wrap:wrap;gap:8px">
-          <span class="kbd">HTML</span>
-          <span class="kbd">CSS</span>
-          <span class="kbd">JavaScript</span>
-          <span class="kbd">Git</span>
-          <span class="kbd">GitHub Actions</span>
-          <span class="kbd">Jekyll</span>
-          <span class="kbd">Markdown</span>
-        </div>
-      </div>
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="lead">If you host PDFs on Polybox or elsewhere, add the links below. For maximum persistence, consider storing them in this repository under <span class="kbd">/assets/papers/</span>.</p>
+      <ul class="inline">
+        <li><a href="#" target="_blank" rel="noopener">[Coming soon] Paper 1</a></li>
+        <li><a href="#" target="_blank" rel="noopener">[Coming soon] Paper 2</a></li>
+      </ul>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Interested in collaborating? Reach me at:</p>
-      <p><a href="mailto:your-email@example.com">your-email@example.com</a> · <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p><a href="mailto:vigarcia@student.ethz.ch">vigarcia@student.ethz.ch</a> · <a href="https://www.linkedin.com/in/victor-garcia-8a750b21a/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="meta">Ueberlandstrasse 17, 8953 Dietikon, Switzerland · +41 77 290 15 29</p>
     </section>
   </main>
 
   <footer>
     <div class="wrap">
-      © <span id="y"></span> Your Name — Published with GitHub Pages.
+      © <span id="y"></span> VICTOR GARCIA — Published with GitHub Pages.
     </div>
   </footer>
 
